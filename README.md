@@ -16,10 +16,17 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+## Weather App
 
-```
-> npm install
-> npm start
-```
+- more Redux Experience
+  - ActionCreator -> Fetch Weather => Constant of ActionType
+- Middlewares
+  - redux-promise
+  - axios --> waits for response of requests --> sends data (as payload) to the reducers
+- reducers  
+  - never direct access/manipulate "state"
+    - state.weather.push  or state.weather = this.props.weather;
+  - return a new object that taks place for an existing state ''' return [ action.payload.data, ...state ]; '''
+- Sparklines Library --> Charts
+- Google Maps api
+- Chart and GoogleMap Component --> reusable
