@@ -18,6 +18,7 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 ## Weather App
 
+- API + API_KEY from http://openweathermap.org/forecast5 
 - more Redux Experience
   - ActionCreator -> Fetch Weather => Constant of ActionType
 - Middlewares
